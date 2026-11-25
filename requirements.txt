@@ -1,0 +1,11 @@
+# Runtime
+pandas==3.0.5
+numpy==2.3.5
+pydantic==2.13.5
+python-dotenv==1.2.3
+PyYAML==6.0.2
+langgraph==1.2.16
+
+# Development / evaluation
+pytest==8.4.2
+hypothesis==6.170.17

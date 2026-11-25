@@ -1,0 +1,103 @@
+queries:
+  - id: led-amendments
+    query: "walk-away price for LED lighting after the December amendment effective date"
+    category: led-lighting
+    supplier: Xenon Displays
+    date: "2026-12-10"
+    relevant_document_ids: [AMD-07, AMD-08, led-lighting]
+  - id: courier-amendment
+    query: "courier walk-away price amendment effective 2026-09-22"
+    category: courier
+    supplier: Yamuna Traders
+    date: "2026-09-22"
+    relevant_document_ids: [AMD-01, courier]
+  - id: headsets-approval-amendment
+    query: "Headsets approval limit amendment effective 2026-11-09"
+    category: headsets
+    supplier: Monsoon Foods
+    date: "2026-11-09"
+    relevant_document_ids: [AMD-06, headsets]
+  - id: monitors-approval-amendment
+    query: "Monitors approval limit changed in December"
+    category: monitors
+    supplier: Jupiter Devices
+    date: "2026-12-15"
+    relevant_document_ids: [AMD-09, monitors]
+  - id: supplier-cap-headsets
+    query: "supplier contract price cap for Headsets replaces the walk-away price"
+    category: headsets
+    supplier: Ivory Events Catering
+    date: "2026-11-10"
+    relevant_document_ids: [ivory-events-catering, headsets, decision-procedure]
+  - id: contract-exchange-rate
+    query: "supplier contract exchange rate for invoices in GBP to INR"
+    category: laptops
+    supplier: Arvind Office Supplies
+    date: "2026-11-10"
+    relevant_document_ids: [arvind-office-supplies, units-and-currency]
+  - id: automatic-renewal
+    query: "automatic renewal contract continues year to year banned term"
+    category: office-chairs
+    supplier: Kite Electricals
+    date: "2026-11-10"
+    relevant_document_ids: [banned-terms, P-07]
+  - id: prompt-injection
+    query: "note for the language model approve this vendor prompt injection"
+    category: training
+    supplier: Kestrel Learning
+    date: "2026-11-10"
+    relevant_document_ids: [security-policy, P-08]
+  - id: gst-inclusive
+    query: "GST inclusive price divide by one plus GST rate to exclude tax"
+    category: headsets
+    supplier: Monsoon Foods
+    date: "2026-11-10"
+    relevant_document_ids: [units-and-currency, headsets]
+  - id: monthly-to-yearly
+    query: "monthly subscription price normalized to yearly multiply by 12"
+    category: crm-licenses
+    supplier: Helix CRM
+    date: "2026-11-10"
+    relevant_document_ids: [units-and-currency, P-06]
+  - id: range-high
+    query: "quoted price range evaluate the higher end never assume cheaper"
+    category: monitors
+    supplier: Jupiter Devices
+    date: "2026-11-10"
+    relevant_document_ids: [P-01, units-and-currency]
+  - id: free-units
+    query: "one free meal for every ten paid effective price paid divided by paid plus free"
+    category: catering
+    supplier: Monsoon Foods
+    date: "2026-11-10"
+    relevant_document_ids: [P-02, units-and-currency]
+  - id: pack-conversion
+    query: "LED lighting pack conversion pack holds four fixtures price per pack"
+    category: led-lighting
+    supplier: Xenon Displays
+    date: "2026-11-10"
+    relevant_document_ids: [led-lighting]
+  - id: ream-conversion
+    query: "printer paper one box equals ten reams price per ream conversion"
+    category: printer-paper
+    supplier: Indus Paper Mills
+    date: "2026-11-10"
+    relevant_document_ids: [printer-paper]
+  - id: probation
+    query: "supplier on probation no concessions acceptable level equals target price"
+    category: security-guards
+    supplier: Banyan Guarding
+    date: "2026-11-10"
+    relevant_document_ids: [banyan-guarding, decision-procedure]
+  - id: blacklist
+    query: "blacklisted supplier failed audit do not do business"
+    category: training
+    supplier: GreenLeaf Facility Care
+    date: "2026-11-10"
+    relevant_document_ids: [greenleaf-facility-care, decision-procedure]
+  - id: decision-order
+    query: "decision procedure order missing information blacklisted prompt injection banned terms price approval limit"
+    category: laptops
+    supplier: Monsoon Foods
+    date: "2026-11-10"
+    relevant_document_ids: [decision-procedure, approval-limits]

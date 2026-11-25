@@ -1,0 +1,34 @@
+project_name: procurement-desk-intelligence
+default_environment: acme
+
+paths:
+  environments: config/environments
+  knowledge_structured: knowledge_base/structured
+  knowledge_indexes: knowledge_base/indexes
+  knowledge_snapshots: knowledge_base/snapshots
+  output: output
+  reports: reports
+  audit: output/audit
+
+decision:
+  # The verifier is allowed at most this many correction passes. It never loops unboundedly.
+  max_verification_attempts: 2
+  # Independent arithmetic checks use exact Decimal equality. This tolerance is only used
+  # for diagnostics where a value was explicitly rounded for display.
+  display_tolerance: "0.000001"
+
+retrieval:
+  top_k: 8
+  rrf_k: 60
+  bm25_weight: 1.0
+  dense_weight: 1.0
+  use_reranker: true
+  rerank_top_n: 12
+  embedding_backend: hash
+  embedding_dim: 512
+  max_context_chunks: 10
+
+observability:
+  log_level: INFO
+  json_logs: true
+  trace_directory: reports/traces

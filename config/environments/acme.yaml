@@ -1,0 +1,13 @@
+name: Acme Corp
+code: acme
+knowledge_root: data/raw/playbook/playbook
+threads_file: data/raw/threads.csv
+sample_threads_file: data/raw/sample_threads.csv
+sample_labels_file: data/raw/sample_answers.csv
+sample_submission_file: data/raw/sample_submission.csv
+structured_dir: knowledge_base/structured/acme
+index_dir: knowledge_base/indexes/acme
+snapshot_dir: knowledge_base/snapshots/acme
+output_dir: output
+audit_dir: output/audit/acme
+retrieval_eval_file: config/retrieval_queries_acme.yaml

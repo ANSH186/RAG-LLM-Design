@@ -1,0 +1,25 @@
+# Local secrets / environments
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+
+# Competition data and generated knowledge (not distributed)
+data/
+knowledge_base/
+reports/
+dist/
+
+# Generated run artifacts; the selected final CSV stays tracked
+output/audit/
+output/runs/
+output/eval/
+output/reproducibility/
+output/reproduced_submission.csv
+output/submission_variant_period_inferred.csv
+output/submission3.csv
+*.sqlite
+*.db

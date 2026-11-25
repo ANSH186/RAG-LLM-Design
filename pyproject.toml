@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "procurement-desk-intelligence"
+version = "1.0.0"
+description = "Temporal hybrid RAG + deterministic procurement decision engine with independent verification"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.26",
+  "pydantic>=2.6",
+  "python-dotenv>=1.0",
+  "PyYAML>=6.0",
+  "langgraph>=0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "hypothesis>=6.100",
+]
+embeddings = [
+  "sentence-transformers>=3.0",
+]
+ui = [
+  "streamlit>=1.30",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "slow: long-running end-to-end tests",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
